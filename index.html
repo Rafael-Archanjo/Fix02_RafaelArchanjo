@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Dom CSS </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Rafael A.">
+    <meta name="description" content="Lista de documentos">
+    <meta name="keywords" content="html5, tecnologia">
+    <style>
+
+        body{
+            font-family: sans-serif;
+        }
+
+        img {
+            width: 13%;
+        }
+
+        p{
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="titulo">Avaliação das estações</h2>
+
+    <p>Verão</p>
+    <img id="verao" src="./img/drink-84533_640.jpg" onmouseover="summerOn()" onmouseout="summerOut()">
+    <div id="summer"></div> <br>
+    
+    <p>Primavera</p>
+    <img id="primavera" src="./img/spring-bird-2295434_640.jpg" onmouseover="springOn()" onmouseout="springOut()">
+    <div id="spring"></div><br>
+
+    <p>Outono</p>
+    <img id="outono" src="./img/benches-560435_640.jpg" onmouseover="fallOn()" onmouseout="fallOut()">
+    <div id="fall"></div><br>
+
+    <p>Inverno</p>
+    <img id="inverno" src="./img/creepy-snowmen_2_zjklok.webp" onmouseover="winterOn()" onmouseout="winterOut()">
+    <div id="winter"></div>
+
+
+
+
+
+
+
+    <script>
+        function summerOn() {
+            document.querySelector("#summer").innerHTML = "Muito quente,não sou muito fã não, 4/10.";
+        }
+        function summerOut() {
+            document.querySelector("#summer").innerHTML = "";
+        }
+        
+        function springOn() {
+            document.querySelector("#spring").innerHTML = "Temperatura na média, nem muito quente nem frio, 7/10.";
+        }
+        function springOut() {
+            document.querySelector("#spring").innerHTML = "";
+        }
+
+        function fallOn() {
+            document.querySelector("#fall").innerHTML = "Bem fresquinho adoro, 8.5/10.";
+        }
+        function fallOut() {
+            document.querySelector("#fall").innerHTML = "";
+        }
+
+        function winterOn() {
+            document.querySelector("#winter").innerHTML = "Friozinho muito bom, recomendo 15/10.";
+        }
+        function winterOut() {
+            document.querySelector("#winter").innerHTML = "";
+        }
+
+            
+
+
+    </script>
+
+</body>
+
+</html>
